@@ -1,0 +1,71 @@
+[
+    {
+        "id": "demo-import-card-1",
+        "title": "IMPORTED: Bitcoin Price",
+        "type": "CARD",
+        "apiConfig": {
+            "endpoint": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true",
+            "adapterId": "generic",
+            "pollingInterval": 30
+        },
+        "dataMap": {
+            "primary": "bitcoin.usd",
+            "delta": "bitcoin.usd_24h_change",
+            "subtitle": "USD"
+        },
+        "style": {},
+        "layout": {
+            "i": "demo-import-card-1",
+            "x": 0,
+            "y": 0,
+            "w": 4,
+            "h": 2
+        }
+    },
+    {
+        "id": "demo-import-chart-2",
+        "title": "IMPORTED: Ethereum Trend",
+        "type": "CHART",
+        "apiConfig": {
+            "endpoint": "https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=30&interval=daily",
+            "adapterId": "generic",
+            "pollingInterval": 60
+        },
+        "dataMap": {
+            "primary": "prices",
+            "xField": "0",
+            "yField": "1"
+        },
+        "style": {
+            "chartVariant": "area"
+        },
+        "layout": {
+            "i": "demo-import-chart-2",
+            "x": 4,
+            "y": 0,
+            "w": 8,
+            "h": 6
+        }
+    },
+    {
+        "id": "demo-import-table-3",
+        "title": "IMPORTED: User Directory",
+        "type": "TABLE",
+        "apiConfig": {
+            "endpoint": "https://api.example.com/users",
+            "adapterId": "generic",
+            "pollingInterval": 300
+        },
+        "dataMap": {
+            "primary": "ROOT"
+        },
+        "style": {},
+        "layout": {
+            "i": "demo-import-table-3",
+            "x": 0,
+            "y": 2,
+            "w": 4,
+            "h": 4
+        }
+    }
+]
