@@ -1,5 +1,7 @@
 # FinBoard - Advanced Finance Dashboard
 
+🚀 ***Live Demo:*** https://finboard-bay-theta.vercel.app/
+
 A production-grade, highly customizable finance dashboard built with Next.js 14, React Grid Layout, and Tailwind CSS. Connect to any JSON API and visualize real-time financial data through draggable widgets.
 
 ![Dark Mode Dashboard](public/home_dark.png)

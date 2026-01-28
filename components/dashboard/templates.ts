@@ -11,7 +11,7 @@ export const TEMPLATES: Record<string, WidgetConfig[]> = {
             apiConfig: {
                 endpoint: 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true',
                 adapterId: 'generic',
-                pollingInterval: 30
+                pollingInterval: 120
             },
             dataMap: {
                 primary: 'bitcoin.usd',
@@ -27,7 +27,7 @@ export const TEMPLATES: Record<string, WidgetConfig[]> = {
             apiConfig: {
                 endpoint: 'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd&include_24hr_change=true',
                 adapterId: 'generic',
-                pollingInterval: 30
+                pollingInterval: 120
             },
             dataMap: {
                 primary: 'ethereum.usd',
@@ -43,7 +43,7 @@ export const TEMPLATES: Record<string, WidgetConfig[]> = {
             apiConfig: {
                 endpoint: 'https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd&include_24hr_change=true',
                 adapterId: 'generic',
-                pollingInterval: 30
+                pollingInterval: 120
             },
             dataMap: {
                 primary: 'solana.usd',
@@ -61,7 +61,7 @@ export const TEMPLATES: Record<string, WidgetConfig[]> = {
             apiConfig: {
                 endpoint: 'https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily',
                 adapterId: 'generic',
-                pollingInterval: 60
+                pollingInterval: 120
             },
             dataMap: {
                 primary: 'prices',
@@ -77,7 +77,7 @@ export const TEMPLATES: Record<string, WidgetConfig[]> = {
             apiConfig: {
                 endpoint: 'https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=30&interval=daily',
                 adapterId: 'generic',
-                pollingInterval: 60
+                pollingInterval: 120
             },
             dataMap: {
                 primary: 'prices',
